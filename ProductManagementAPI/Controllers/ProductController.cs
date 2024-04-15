@@ -189,7 +189,7 @@ namespace ProductManagementAPI.Controllers
                 // Delete the product
                 await _productService.DeleteProductAsync(existingProduct);
 
-                return NoContent(); // 204 No Content
+                return Ok(existingProduct); // 204 No Content
             }
             catch (Exception ex)
             {

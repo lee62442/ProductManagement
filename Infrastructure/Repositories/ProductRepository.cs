@@ -62,13 +62,13 @@ namespace Infrastructure.Repositories
 
         public async Task AddProductAsync(Product product)
         {
+            _dbContext.Products.Add(product);
+            await _dbContext.SaveChangesAsync();
+
             if (!product.IsActive)
             {
                 await AddApprovalRequestAsync(product.Id, RequestType.Create, "Creation with Price Over $5000"); 
             }
-
-            _dbContext.Products.Add(product);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task UpdateProductAsync(Product product)
@@ -95,7 +95,8 @@ namespace Infrastructure.Repositories
                 ProductId = productId,
                 RequestReason = requestReason,
                 RequestDate = DateTime.Now,
-                RequestType = requestType
+                RequestType = requestType,
+                Status = ApprovalStatus.Pending
             };
             _dbContext.ApprovalRequests.Add(approvalRequest);
             await _dbContext.SaveChangesAsync();
