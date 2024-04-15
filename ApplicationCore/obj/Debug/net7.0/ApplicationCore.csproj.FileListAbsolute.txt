@@ -10,3 +10,15 @@
 /Users/lee62442/Projects/ProductManagement/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll
 /Users/lee62442/Projects/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb
 /Users/lee62442/Projects/ProductManagement/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/bin/Debug/net7.0/ApplicationCore.deps.json
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/bin/Debug/net7.0/ApplicationCore.dll
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/bin/Debug/net7.0/ApplicationCore.pdb
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.AssemblyReference.cache
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.AssemblyInfo.cs
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.dll
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb
+/Users/lee62442/Desktop/学习&面试/antra/Training/CDK/ProductManagement/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll

@@ -101,6 +101,36 @@ namespace Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
 
         }
+
+        private async Task RejectRequestAsync(ApprovalRequest approvalRequest)
+        {
+            approvalRequest.Status = ApprovalStatus.Rejected;
+            _dbContext.ApprovalRequests.Remove(approvalRequest);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        private async Task ApproveRequestAsync(ApprovalRequest approvalRequest)
+        {
+            approvalRequest.Status = ApprovalStatus.Approved;
+            var product = approvalRequest.Product;
+
+            if (approvalRequest.RequestType == RequestType.Delete)
+            {
+                _dbContext.Products.Remove(product!);
+            }
+            else if (approvalRequest.RequestType == RequestType.Update)
+            {
+                _dbContext.Products.Update(product!);
+                
+            } else
+            {
+                _dbContext.Products.Add(product!);
+            }
+
+            _dbContext.ApprovalRequests.Remove(approvalRequest);
+            await _dbContext.SaveChangesAsync();
+
+        }
     }
 }
 

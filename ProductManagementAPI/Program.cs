@@ -18,7 +18,10 @@ builder.Services.AddDbContext<ProductManagementDbContext>();
 
 // Dependency Injections
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IApprovalRequestService, ApprovalRequestService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IApprovalRequestRepository, ApprovalRequestRepository>();
+
 
 var app = builder.Build();
 

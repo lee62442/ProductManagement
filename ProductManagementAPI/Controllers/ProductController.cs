@@ -17,13 +17,12 @@ namespace ProductManagementAPI.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
-        private readonly IApprovalRequestService _approvalService;
+        
 
 
-        public ProductController(IProductService productService, IApprovalRequestService approvalService)
+        public ProductController(IProductService productService)
         {
             _productService = productService;
-            _approvalService = approvalService;
         }
 
         /// <summary>
@@ -170,14 +169,11 @@ namespace ProductManagementAPI.Controllers
             }
         }
 
-        /* 
-
-           * Delete Product:
-
-           API Endpoint: DELETE /api/products/{productId}
-           Description: Deletes a product. Moves the product to the approval queue before deletion.
-           */
-
+        /// <summary>
+        /// Deletes a product. Moves the product to the approval queue before deletion.
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <returns></returns>
         [HttpDelete("{productId}")]
         public async Task<ActionResult> DeleteProduct(int productId)
         {
