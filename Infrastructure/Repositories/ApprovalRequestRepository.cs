@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<ApprovalRequest>> GetActiveProductsAsync()
+        public async Task<IEnumerable<ApprovalRequest>> GetApprovalRequestsAsync()
         {
             return await _dbContext.ApprovalRequests
                 .OrderByDescending(ar => ar.RequestDate)

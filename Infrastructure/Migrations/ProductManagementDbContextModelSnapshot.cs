@@ -43,6 +43,9 @@ namespace Infrastructure.Migrations
                     b.Property<int>("RequestType")
                         .HasColumnType("int");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("ApprovalRequestId");
 
                     b.HasIndex("ProductId");
@@ -53,50 +56,11 @@ namespace Infrastructure.Migrations
                         new
                         {
                             ApprovalRequestId = 1,
-                            ProductId = 2,
-                            RequestDate = new DateTime(2024, 3, 31, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(490),
-                            RequestReason = "Price change/Update request",
-                            RequestType = 2
-                        },
-                        new
-                        {
-                            ApprovalRequestId = 2,
-                            ProductId = 4,
-                            RequestDate = new DateTime(2024, 4, 4, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(500),
-                            RequestReason = "Price change/Update request",
-                            RequestType = 2
-                        },
-                        new
-                        {
-                            ApprovalRequestId = 3,
-                            ProductId = 5,
-                            RequestDate = new DateTime(2024, 4, 7, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(510),
-                            RequestReason = "Delete request",
-                            RequestType = 3
-                        },
-                        new
-                        {
-                            ApprovalRequestId = 4,
-                            ProductId = 6,
-                            RequestDate = new DateTime(2024, 3, 31, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(510),
-                            RequestReason = "New product",
-                            RequestType = 1
-                        },
-                        new
-                        {
-                            ApprovalRequestId = 5,
                             ProductId = 7,
-                            RequestDate = new DateTime(2024, 3, 23, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(520),
+                            RequestDate = new DateTime(2024, 3, 21, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8500),
                             RequestReason = "New product",
-                            RequestType = 1
-                        },
-                        new
-                        {
-                            ApprovalRequestId = 6,
-                            ProductId = 10,
-                            RequestDate = new DateTime(2024, 4, 8, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(530),
-                            RequestReason = "Price change/Update request",
-                            RequestType = 2
+                            RequestType = 1,
+                            Status = 1
                         });
                 });
 
@@ -131,81 +95,81 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             IsActive = true,
-                            Name = "Doohickey 1",
-                            PostedDate = new DateTime(2024, 2, 26, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(430),
-                            Price = 754.0
+                            Name = "Gadget 1",
+                            PostedDate = new DateTime(2024, 4, 13, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8400),
+                            Price = 496.39999999999998
                         },
                         new
                         {
                             Id = 2,
-                            IsActive = false,
-                            Name = "Thingamajig 2",
-                            PostedDate = new DateTime(2023, 7, 3, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(480),
-                            Price = 217.18000000000001
+                            IsActive = true,
+                            Name = "Widget 2",
+                            PostedDate = new DateTime(2023, 11, 15, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8470),
+                            Price = 464.82999999999998
                         },
                         new
                         {
                             Id = 3,
                             IsActive = true,
                             Name = "Doohickey 3",
-                            PostedDate = new DateTime(2023, 10, 18, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(500),
-                            Price = 13.93
+                            PostedDate = new DateTime(2024, 1, 8, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8470),
+                            Price = 347.99000000000001
                         },
                         new
                         {
                             Id = 4,
-                            IsActive = false,
-                            Name = "Doohickey 4",
-                            PostedDate = new DateTime(2023, 11, 16, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(500),
-                            Price = 723.15999999999997
+                            IsActive = true,
+                            Name = "Thingamajig 4",
+                            PostedDate = new DateTime(2023, 10, 28, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8470),
+                            Price = 13.279999999999999
                         },
                         new
                         {
                             Id = 5,
-                            IsActive = false,
-                            Name = "Gadget 5",
-                            PostedDate = new DateTime(2023, 9, 13, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(500),
-                            Price = 496.99000000000001
+                            IsActive = true,
+                            Name = "Thingamajig 5",
+                            PostedDate = new DateTime(2023, 12, 8, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8480),
+                            Price = 715.78999999999996
                         },
                         new
                         {
                             Id = 6,
-                            IsActive = false,
-                            Name = "Gadget 6",
-                            PostedDate = new DateTime(2024, 2, 21, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(510),
-                            Price = 794.32000000000005
+                            IsActive = true,
+                            Name = "Thingamajig 6",
+                            PostedDate = new DateTime(2023, 8, 26, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8490),
+                            Price = 611.51999999999998
                         },
                         new
                         {
                             Id = 7,
                             IsActive = false,
                             Name = "Thingamajig 7",
-                            PostedDate = new DateTime(2023, 12, 5, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(520),
-                            Price = 862.36000000000001
+                            PostedDate = new DateTime(2023, 9, 9, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8490),
+                            Price = 94.170000000000002
                         },
                         new
                         {
                             Id = 8,
                             IsActive = true,
-                            Name = "Gadget 8",
-                            PostedDate = new DateTime(2023, 12, 28, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(520),
-                            Price = 984.16999999999996
+                            Name = "Thingamajig 8",
+                            PostedDate = new DateTime(2023, 8, 18, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8500),
+                            Price = 545.02999999999997
                         },
                         new
                         {
                             Id = 9,
                             IsActive = true,
-                            Name = "Doohickey 9",
-                            PostedDate = new DateTime(2023, 7, 12, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(530),
-                            Price = 646.63999999999999
+                            Name = "Thingamajig 9",
+                            PostedDate = new DateTime(2023, 12, 16, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8510),
+                            Price = 534.91999999999996
                         },
                         new
                         {
                             Id = 10,
-                            IsActive = false,
-                            Name = "Gadget 10",
-                            PostedDate = new DateTime(2023, 7, 11, 1, 32, 25, 293, DateTimeKind.Local).AddTicks(530),
-                            Price = 591.60000000000002
+                            IsActive = true,
+                            Name = "Widget 10",
+                            PostedDate = new DateTime(2023, 5, 25, 9, 47, 43, 718, DateTimeKind.Local).AddTicks(8510),
+                            Price = 978.16999999999996
                         });
                 });
 

@@ -6,7 +6,7 @@ namespace ApplicationCore.ServiceInterfaces
 {
 	public interface IApprovalRequestService
 	{
-        Task<IEnumerable<ApprovalRequestResponseModel>> GetActiveProductsAsync();
+        Task<IEnumerable<ApprovalRequestResponseModel>> GetApprovalRequestsAsync();
     }
 }
 

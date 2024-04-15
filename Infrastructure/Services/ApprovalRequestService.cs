@@ -13,9 +13,9 @@ namespace Infrastructure.Services
             _repository = repository;
 		}
 
-        public async Task<IEnumerable<ApprovalRequestResponseModel>> GetActiveProductsAsync()
+        public async Task<IEnumerable<ApprovalRequestResponseModel>> GetApprovalRequestsAsync()
         {
-            var requests =  await _repository.GetActiveProductsAsync();
+            var requests =  await _repository.GetApprovalRequestsAsync();
 
             var requestModels = new List<ApprovalRequestResponseModel>();
             foreach(var request in requests)

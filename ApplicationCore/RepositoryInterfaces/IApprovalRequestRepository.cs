@@ -6,7 +6,7 @@ namespace ApplicationCore.RepositoryInterfaces
 {
 	public interface IApprovalRequestRepository
 	{
-        Task<IEnumerable<ApprovalRequest>> GetActiveProductsAsync();
+        Task<IEnumerable<ApprovalRequest>> GetApprovalRequestsAsync();
     }
 }
 

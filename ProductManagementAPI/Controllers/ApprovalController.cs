@@ -26,10 +26,10 @@ namespace ProductManagementAPI.Controllers
         /// Retrieves a list of active products sorted by the latest posted date
         /// </summary>
         /// <returns></returns>
-        [HttpGet("active")]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Product>>> GetApprovalRequests()
         {
-            var approvalRequests = await _approvalService.GetActiveProductsAsync();
+            var approvalRequests = await _approvalService.GetApprovalRequestsAsync();
 
             if (!approvalRequests.Any())
             {
