@@ -1,0 +1,17 @@
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/Infrastructure.deps.json
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/Infrastructure.runtimeconfig.json
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/Infrastructure.dll
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/Infrastructure.pdb
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/ApplicationCore.dll
+/Users/lee62442/Projects/ProductManagement/Infrastructure/bin/Debug/net7.0/ApplicationCore.pdb
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfo.cs
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CopyComplete
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.dll
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/Infrastructure.genruntimeconfig.cache
+/Users/lee62442/Projects/ProductManagement/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
